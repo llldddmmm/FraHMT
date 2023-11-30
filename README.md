@@ -11,7 +11,7 @@ where `<DATASET_NAME>` must be `ZINC` or `EGFR` or `HTR1A`.
 
 ### Training
 After preprocessing, you can train the model running:
-`python manage.py train --dataset <DATASET_NAME>`
+`python manage.py train --dataset ZINC`
 If you wish to train using a GPU, add the `--use_gpu` option.
 Training the model will create folder `RUNS` with the following structure:
 ```
@@ -43,6 +43,7 @@ during training and check the `localhost:6006` page in your favorite browser.
 After pre-training, you can perform transfer training:
 `python manage.py train_transfer --dataset <DATASET_NAME>`
 If you wish to train using a GPU, add the `--use_gpu` option.
+Here you need to provide a ‘transfer_run_dir’, which is the path to the pre-training running directory.
 
 ### Sampling
 After the model is trained, you can sample from it using
