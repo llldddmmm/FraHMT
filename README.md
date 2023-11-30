@@ -53,7 +53,7 @@ After pre-training, you can perform transfer training:
 where `<DATASET_NAME>` must be `EGFR` or `HTR1A`. 
 If you wish to train using a GPU, add the `--use_gpu` option.
 
-Here you need to provide a `transfer_run_dir`, which is the path to the pre-training running directory.
+Here you need to provide a `<transfer_run_dir>`, which is the path to the pre-training running directory.
 
 ### Sampling
 After the model is trained, you can sample from it using
